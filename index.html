@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DoctorQ — Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --purple: #5B3DE8;
+    --purple-light: #EDE9FF;
+    --purple-mid: #7B5FF0;
+    --text: #1A1A2E;
+    --muted: #6B7280;
+    --border: #E5E7EB;
+    --bg: #FAFAFA;
+    --white: #ffffff;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 24px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    background: var(--purple);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo svg { width: 22px; height: 22px; fill: white; }
+
+  .logo-text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--purple);
+    letter-spacing: -0.3px;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--purple) 0%, var(--purple-mid) 100%);
+    color: white;
+    padding: 64px 24px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    opacity: 0.85;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 0.3px;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+  }
+
+  .section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    color: var(--purple);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--purple-light);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section h2 .num {
+    background: var(--purple);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  .section p {
+    color: #374151;
+    margin-bottom: 12px;
+  }
+
+  .section ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 12px;
+  }
+
+  .section ul li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+    color: #374151;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section ul li:last-child { border-bottom: none; }
+
+  .section ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--purple);
+    font-weight: 600;
+  }
+
+  .highlight-box {
+    background: var(--purple-light);
+    border-left: 4px solid var(--purple);
+    border-radius: 0 12px 12px 0;
+    padding: 18px 20px;
+    margin: 20px 0;
+  }
+
+  .highlight-box p {
+    margin: 0;
+    color: var(--purple);
+    font-weight: 500;
+  }
+
+  .contact-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  }
+
+  .contact-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+
+  .contact-card p { color: var(--muted); margin-bottom: 16px; }
+
+  .contact-card a {
+    display: inline-block;
+    background: var(--purple);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: opacity 0.2s;
+  }
+
+  .contact-card a:hover { opacity: 0.85; }
+
+  .updated {
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer {
+    background: var(--text);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+  }
+
+  footer span { color: rgba(255,255,255,0.8); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+      </svg>
+    </div>
+    <span class="logo-text">DoctorQ</span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="badge">Legal Document</div>
+  <h1>Privacy Policy</h1>
+  <p>We are committed to protecting your personal information and being transparent about how we use it.</p>
+</div>
+
+<main>
+
+  <div class="section">
+    <h2><span class="num">1</span> Introduction</h2>
+    <p>Welcome to DoctorQ. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our mobile application.</p>
+    <p>By using DoctorQ, you agree to the collection and use of information in accordance with this policy. If you do not agree with this policy, please do not use the app.</p>
+    <div class="highlight-box">
+      <p>DoctorQ is an appointment booking and queue management tool only. We do not provide medical advice, diagnosis, or treatment.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">2</span> Information We Collect</h2>
+    <p>We collect the following personal information when you register and use DoctorQ:</p>
+    <ul>
+      <li>Full name</li>
+      <li>Email address</li>
+      <li>Phone number</li>
+      <li>City of residence</li>
+      <li>Appointment details (doctor name, date, time, queue number)</li>
+      <li>Doctor or clinic information (for healthcare provider accounts)</li>
+    </ul>
+    <p>We do not collect any sensitive medical records, diagnoses, prescriptions, or health history.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">3</span> How We Use Your Information</h2>
+    <p>The information we collect is used solely for the following purposes:</p>
+    <ul>
+      <li>Creating and managing your account</li>
+      <li>Booking and confirming appointments</li>
+      <li>Generating QR codes for clinic check-in</li>
+      <li>Managing live queue positions in real time</li>
+      <li>Allowing clinic staff to identify patients during check-in</li>
+      <li>Improving app performance and user experience</li>
+    </ul>
+    <p>We do not use your data for advertising, marketing to third parties, or any purpose beyond operating the app.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">4</span> Data Storage & Security</h2>
+    <p>All data is stored securely using Apple CloudKit, Apple's cloud infrastructure. Your data is stored in Apple's servers and is subject to Apple's security standards.</p>
+    <ul>
+      <li>Passwords are encrypted using SHA-256 hashing before storage</li>
+      <li>Data is transmitted over encrypted HTTPS connections</li>
+      <li>We do not store passwords in plain text under any circumstances</li>
+      <li>Access to your data is restricted to your account only</li>
+    </ul>
+    <div class="highlight-box">
+      <p>Your data is stored on Apple's iCloud infrastructure. Apple's privacy policy also applies. Visit apple.com/privacy for more information.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">5</span> Data Sharing</h2>
+    <p>We do not sell, trade, or rent your personal information to any third parties. Your information may be shared only in the following limited circumstances:</p>
+    <ul>
+      <li>With the clinic or doctor you have booked an appointment with — so they can identify you during check-in</li>
+      <li>With Apple as required to operate CloudKit services</li>
+      <li>If required by law or legal process</li>
+    </ul>
+    <p>No advertising networks, data brokers, or marketing companies ever receive your data.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">6</span> Camera Usage</h2>
+    <p>DoctorQ requests access to your device camera solely for the purpose of scanning patient QR codes during the clinic check-in process. This feature is used exclusively by healthcare provider accounts.</p>
+    <p>We do not store, transmit, or process any images or video captured by the camera. Camera access is only active while the QR scanner is open.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">7</span> iCloud Requirement</h2>
+    <p>DoctorQ requires an active iCloud account on your device to function. This is because we use Apple CloudKit for secure data storage. We do not access your personal iCloud files, photos, contacts, or any other iCloud data beyond what DoctorQ stores itself.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">8</span> Your Rights</h2>
+    <p>You have the following rights regarding your personal data:</p>
+    <ul>
+      <li>Right to access — you can request a copy of all data we hold about you</li>
+      <li>Right to deletion — you can request that we delete your account and all associated data</li>
+      <li>Right to correction — you can request that we correct any inaccurate data</li>
+      <li>Right to portability — you can request your data in a readable format</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at the email address below.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">9</span> Children's Privacy</h2>
+    <p>DoctorQ is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately so we can delete it.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">10</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify users of any significant changes by updating the date at the bottom of this page. We encourage you to review this policy periodically.</p>
+    <p>Continued use of DoctorQ after changes are posted constitutes your acceptance of the updated policy.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">11</span> Medical Disclaimer</h2>
+    <div class="highlight-box">
+      <p>DoctorQ is an appointment booking and queue management tool only. It does not provide medical advice, diagnosis, or treatment. Always consult a qualified and licensed healthcare professional for any medical concerns.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="contact-card">
+      <h3>Questions or Concerns?</h3>
+      <p>If you have any questions about this Privacy Policy or how we handle your data, please contact us.</p>
+      <a href="mailto:aarshiamaleki@gmail.com">aarshiamaleki@gmail.com</a>
+    </div>
+  </div>
+
+  <p class="updated">Last updated: March 10, 2026 &nbsp;·&nbsp; DoctorQ</p>
+
+</main>
+
+<footer>
+  <p>© 2026 <span>DoctorQ</span>. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
